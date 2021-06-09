@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:EncriptionApp.View"
+       xmlns:controls="clr-namespace:EncriptionApp.Controls"
+             x:Class="EncriptionApp.MainPage"
+            Title="EncriptionApp">
+
+    <Shell.FlyoutHeader>
+        <controls:FlyoutHeader />
+    </Shell.FlyoutHeader>
+    <FlyoutItem Title="RSA" FlyoutIcon="doorkey1.png" >
+        <ShellContent ContentTemplate="{DataTemplate local:RSAPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="AES" FlyoutIcon="password.png">
+        <ShellContent ContentTemplate="{DataTemplate local:AESPage}"/>
+    </FlyoutItem >
+    <FlyoutItem Title="Teoria" FlyoutIcon="formula.png">
+        <ShellContent ContentTemplate="{DataTemplate local:TeoryPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Acerca de.." FlyoutIcon="info.png">
+        <ShellContent ContentTemplate="{DataTemplate local:AboutPage}"/>
+    </FlyoutItem>
+
+</Shell>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EncriptionApp.View.TeoryPage" Title="Teoria" Shell.BackgroundColor=" #900C3F">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="0">
+                <Label Text="RSA" HorizontalOptions="Center" FontFamily="aAbsoluteEmpire.ttf#CodigoBarras" FontSize="20"/>
+                <Label Text="El algoritmo de clave pública RSA fue creado en 1978 por Rivest, Shamir y Adlman, y es el sistema criptográfico asimétrico más conocido y usado. Se basaron en el artículo de Diffie-Hellman sobre sistemas de llave pública, crearon su algoritmo y fundaron la empresa RSA Data Security Inc., que es actualmente una de las más prestigiosas en el entorno de la protección de datos.El sistema RSA se basa en el hecho matemático de la dificultad de factorizar números muy grandes. Para factorizar un número el sistema más lógico consiste en empezar a dividir sucesivamente éste entre 2, entre 3, entre 4,..., y así sucesivamente, buscando que el resultado de la división sea exacto, es decir, de resto 0, con lo que ya tendremos un divisor del número." />
+                <Image Source="RSA.png"/>
+                <Label Text="AES" HorizontalOptions="Center" FontFamily="aAbsoluteEmpire.ttf#CodigoBarras" FontSize="20"/>
+                <Label Text="El Advanced Encryption Standard, abreviado AES, se usa con el fin de cifrar datos y de protegerlos contra cualquier acceso ilícito. El método criptográfico emplea para este objetivo una clave de longitud variada y se denomina según la longitud de clave usada AES-128, AES-192 o AES-256.Originalmente, este método fue impulsado por el instituto norteamericano National Institute of Standards and Technology y puede emplearse en los EE.UU para cifrar los documentos con clasificación de seguridad máxima.Este método se considera muy seguro y eficiente y sirve para cifrar los datos de todo tipo y por eso, se suele usar en varios protocolos y técnicas de transmisión. P.ej. la protección WPA2 de las redes WiFi utiliza también el Advanced Encryption Standard como p. ej. el estándar SSH o IPsec. Frecuentemente se usan los métodos AES también en la telefonía a través del internet (Voice over IP, VoIP) con el fin de asegurar los datos de señalización o también los datos útiles."/>
+                <Image Source="AES.jpg"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
