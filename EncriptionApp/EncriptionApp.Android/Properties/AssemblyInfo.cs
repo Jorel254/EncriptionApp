@@ -15,7 +15,7 @@ using Android.App;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
-
+[assembly: Application(Debuggable = false)]
 // Version information for an assembly consists of the following four values:
 //
 //      Major Version
@@ -28,3 +28,4 @@ using Android.App;
 // Add some common permissions, these can be removed if not needed
 [assembly: UsesPermission(Android.Manifest.Permission.Internet)]
 [assembly: UsesPermission(Android.Manifest.Permission.WriteExternalStorage)]
+[assembly: UsesPermission(Android.Manifest.Permission.ReadExternalStorage)]

@@ -17,14 +17,14 @@
             <StackLayout >
                 <StackLayout   Spacing="0">
                     <Frame BorderColor="#000000" CornerRadius="18" BackgroundColor="Transparent">
-                        <Editor  Placeholder="Introduce el mensaje" PlaceholderColor="#000000" AutoSize="TextChanges" HeightRequest="100" Text="{Binding Text}"/>
+                        <Editor TextColor="#000000"   Placeholder="Introduce el mensaje" PlaceholderColor="#000000" AutoSize="TextChanges" HeightRequest="100" Text="{Binding Text}"/>
                     </Frame>
                     <Button Margin="10"  TextColor="#900C3F " CornerRadius="10" BackgroundColor="Transparent" BorderColor="#000000" BorderWidth="1" Text="Encriptar"  FontFamily="APompadourBoldSample.ttf#CodigoBarras" FontSize="20" Command="{Binding EncryptCommand}"/>
                 </StackLayout>
                 <Label Text="Texto encriptado:" TextColor="#000000" FontSize="18"  FontFamily="APompadourBoldSample.ttf#CodigoBarras"/>
                 <StackLayout   Spacing="0" >
                     <Frame BorderColor="#000000" CornerRadius="18" Grid.Row="0" BackgroundColor="Transparent">
-                        <Editor  Placeholder="El texto es" PlaceholderColor="#000000" AutoSize="TextChanges" HeightRequest="150" IsReadOnly="True" Text="{Binding Text2}"/>
+                        <Editor TextColor="#000000"  Placeholder="El texto es" PlaceholderColor="#000000" AutoSize="TextChanges" HeightRequest="150" IsReadOnly="True" Text="{Binding Text2}"/>
                     </Frame>
                     <Button Margin="10" TextColor="#900C3F " CornerRadius="10" BackgroundColor="Transparent" BorderColor="#000000" BorderWidth="1" Text="Desencriptar"  FontFamily="APompadourBoldSample.ttf#CodigoBarras" FontSize="20" Command="{Binding DecryptCommand}"/>
                 </StackLayout>

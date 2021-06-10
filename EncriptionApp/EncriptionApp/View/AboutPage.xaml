@@ -8,12 +8,13 @@
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout Padding="20" Spacing="0">
-            <Label Text="Esta apliacacion fue desarrollada con fines educativos para mostrar algunas de las formas de Criptografia" FontFamily="APompadourBoldSample.ttf#CodigoBarras."/>
+            <Label TextColor="#000000" Text="Esta apliacacion fue desarrollada con fines educativos para mostrar algunas de las formas de Criptografia" FontFamily="APompadourBoldSample.ttf#CodigoBarras."/>
             <Button   Margin="10" CornerRadius="10" BackgroundColor="Transparent" BorderColor="#000000" BorderWidth="1"  Text="GitHub" TextColor="#900C3F" FontFamily="APompadourBoldSample.ttf#CodigoBarras" Command="{Binding GitHubCommand}" />
-            <Label Text="Esta aplicación fue desarrollada con:" FontFamily="APompadourBoldSample.ttf#CodigoBarras."/>
+            <Label TextColor="#000000" Text="Esta aplicación fue desarrollada con:" FontFamily="APompadourBoldSample.ttf#CodigoBarras."/>
             <Button Margin="10"  TextColor="#900C3F " CornerRadius="10" BackgroundColor="Transparent" BorderColor="#000000" BorderWidth="1" Text="Xamarin Forms"  FontFamily="APompadourBoldSample.ttf#CodigoBarras" Command="{Binding XamarinCommand}"/>
-            <!--<Button Margin="10" Background="#ffdd00" TextColor="Black" CornerRadius="10" BackgroundColor="Transparent" BorderColor="#000000" BorderWidth="1" Text="Comprame un cafe"  FontFamily="APompadourBoldSample.ttf#CodigoBarras" Command="{Binding BuyMeACoffeCommand}"/>-->
-            <Label VerticalOptions="EndAndExpand" FontSize="15" Text="Desarrollado por: Santiago Gonzalez Santiesteban" FontFamily="APompadourTextSample.ttf#CodigoBarras"/>
+            <Button Margin="10" Background="#ffdd00" TextColor="Black" CornerRadius="10" BackgroundColor="Transparent" BorderColor="#000000" BorderWidth="1" Text="Comprame un cafe"  FontFamily="APompadourBoldSample.ttf#CodigoBarras" Command="{Binding BuyMeACoffeCommand}"/>
+            <Label TextColor="#000000" Text="Agradecimiento a Tapia Sanchez Daniel por su excelente labor." FontFamily="APompadourTextSample.ttf#CodigoBarras" VerticalOptions="EndAndExpand" FontSize="15"/>
+            <Label TextColor="#000000" VerticalOptions="End" FontSize="15" Text="Desarrollado por: Santiago Gonzalez Santiesteban" FontFamily="APompadourTextSample.ttf#CodigoBarras"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
