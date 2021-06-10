@@ -9,10 +9,6 @@ namespace EncriptionApp
         public App()
         {
             InitializeComponent();
-
-            //var navigationPage = new NavigationPage();
-            //navigationPage.BarBackgroundColor = Color.FromHex("#900C3F");
-            //navigationPage.BarTextColor = Color.White;
             var mainPage = new MainPage();
             mainPage.BackgroundColor = Color.FromHex("#900C3F");
             mainPage.FlyoutBackgroundColor = Color.FromHex("#900C3F");

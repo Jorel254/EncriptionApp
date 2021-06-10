@@ -6,7 +6,7 @@
         <Image Aspect="AspectFit"
                Source="encryption.png"
                Opacity="0.5"/>
-        <Label Text="Encrypt App"
+        <Label Text="Encription App"
                TextColor="Black"
                FontAttributes="Bold"
                HorizontalTextAlignment="Center"

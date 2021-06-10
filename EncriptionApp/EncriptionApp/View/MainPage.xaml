@@ -15,11 +15,20 @@
     <FlyoutItem Title="AES" FlyoutIcon="password.png">
         <ShellContent ContentTemplate="{DataTemplate local:AESPage}"/>
     </FlyoutItem >
+    <FlyoutItem Title="Transposición" FlyoutIcon="password.png">
+        <ShellContent ContentTemplate="{DataTemplate local:TransposicionPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title=" Transposición Binaria" FlyoutIcon="password.png">
+        <ShellContent ContentTemplate="{DataTemplate local:TransposicionBPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Sustitución(Cesar)" FlyoutIcon="password.png">
+        <ShellContent ContentTemplate="{DataTemplate local:CesarPage}"/>
+    </FlyoutItem>
     <FlyoutItem Title="Teoria" FlyoutIcon="formula.png">
         <ShellContent ContentTemplate="{DataTemplate local:TeoryPage}"/>
     </FlyoutItem>
     <FlyoutItem Title="Acerca de.." FlyoutIcon="info.png">
         <ShellContent ContentTemplate="{DataTemplate local:AboutPage}"/>
     </FlyoutItem>
-
+   
 </Shell>

@@ -2,30 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:viewmodel="clr-namespace:EncriptionApp.ViewModel"
-              xmlns:fonts="clr-namespace:EncriptionApp.Fonts"
-             x:Class="EncriptionApp.View.RSAPage"  Title="Encriptación RSA"  Shell.BackgroundColor=" #900C3F">
+             x:Class="EncriptionApp.View.TransposicionBPage"  x:DataType="viewmodel:TransposicionViewModel"
+             Title="Trasnposicion Binaria"  Shell.BackgroundColor=" #900C3F"
+             xmlns:fonts="clr-namespace:EncriptionApp.Fonts">
     <ContentPage.BindingContext>
-        <viewmodel:RSAViewModel/>
+        <viewmodel:TransposicionViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout Padding="20" Spacing="0">
-            <StackLayout Orientation="Horizontal">
-                <Button BackgroundColor="Transparent" TextColor="Black" HorizontalOptions="EndAndExpand" Text="{x:Static  fonts:FontelloIcon.Info}" FontFamily="{x:Static fonts:FontelloIcon.Font}" FontSize="20" Command="{Binding AlertCommand}"/>
-            </StackLayout>
-            <Button   Margin="10" CornerRadius="10" BackgroundColor="Transparent" BorderColor="#000000" BorderWidth="1"  Text="Generara llaves" TextColor="#900C3F" FontFamily="APompadourBoldSample.ttf#CodigoBarras" FontSize="20" Command="{Binding CreateKeyCommand}" />
             <StackLayout >
                 <StackLayout   Spacing="0">
                     <Frame BorderColor="#000000" CornerRadius="18" BackgroundColor="Transparent">
                         <Editor MaxLength="117" Placeholder="Introduce el mensaje" PlaceholderColor="#000000" AutoSize="TextChanges" HeightRequest="100" Text="{Binding Text}"/>
                     </Frame>
-                    <Button Margin="10"  TextColor="#900C3F " CornerRadius="10" BackgroundColor="Transparent" BorderColor="#000000" BorderWidth="1" Text="Encriptar"  FontFamily="APompadourBoldSample.ttf#CodigoBarras" FontSize="20" Command="{Binding EncyptCommand}"/>
+                    <Button Margin="10"  TextColor="#900C3F " CornerRadius="10" BackgroundColor="Transparent" BorderColor="#000000" BorderWidth="1" Text="Encriptar"  FontFamily="APompadourBoldSample.ttf#CodigoBarras" FontSize="20" Command="{Binding EncryptCommandB}"/>
                 </StackLayout>
                 <Label Text="Texto encriptado:" TextColor="#000000" FontSize="18"  FontFamily="APompadourBoldSample.ttf#CodigoBarras"/>
                 <StackLayout   Spacing="0" >
                     <Frame BorderColor="#000000" CornerRadius="18" Grid.Row="0" BackgroundColor="Transparent">
                         <Editor  Placeholder="El texto es" PlaceholderColor="#000000" AutoSize="TextChanges" HeightRequest="150" IsReadOnly="True" Text="{Binding Text2}"/>
                     </Frame>
-                    <Button Margin="10" TextColor="#900C3F " CornerRadius="10" BackgroundColor="Transparent" BorderColor="#000000" BorderWidth="1" Text="Desencriptar"  FontFamily="APompadourBoldSample.ttf#CodigoBarras" FontSize="20" Command="{Binding DecyptCommand}"/>
+                    <Button Margin="10" TextColor="#900C3F " CornerRadius="10" BackgroundColor="Transparent" BorderColor="#000000" BorderWidth="1" Text="Desencriptar"  FontFamily="APompadourBoldSample.ttf#CodigoBarras" FontSize="20" Command="{Binding DecryptCommandB}"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>

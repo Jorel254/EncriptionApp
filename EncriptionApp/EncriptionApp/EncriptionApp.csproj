@@ -21,6 +21,7 @@
   <ItemGroup>
     <PackageReference Include="Acr.UserDialogs" Version="7.1.0.514" />
     <PackageReference Include="MagicGradients" Version="1.3.0" />
+    <PackageReference Include="System.IO.Abstractions" Version="13.2.33" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="1.1.0" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
@@ -36,10 +37,19 @@
     <EmbeddedResource Update="View\AESPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="View\CesarPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="View\RSAPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\TeoryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\TransposicionBPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\TransposicionPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

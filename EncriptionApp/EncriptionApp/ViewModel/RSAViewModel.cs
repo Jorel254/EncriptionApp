@@ -8,7 +8,6 @@ using System.Security.Cryptography;
 using System.Threading.Tasks;
 using EncriptionApp.Models;
 using EncriptionApp.Code;
-using Acr.UserDialogs;
 
 [assembly: Dependency(typeof(DirectoryHelper))]
 namespace EncriptionApp.ViewModel
@@ -17,8 +16,6 @@ namespace EncriptionApp.ViewModel
     {
         FileStream fileStream;
         DirectoryHelper help;
-        public ICommand PickFileCommand { get; set; }
-        public ICommand DelPickerCommand { get; set; }
         public ICommand CreateKeyCommand { get; set; }
         public ICommand EncyptCommand { get; set; }
         public ICommand DecyptCommand { get; set; }
@@ -128,7 +125,7 @@ namespace EncriptionApp.ViewModel
             {
                 File.Delete(Path1);
             }
-            fileStream = new FileStream(Path1, FileMode.CreateNew, FileAccess.Write);
+            fileStream = new FileStream(Path1, FileMode.Create, FileAccess.Write);
             byte[] publicBytes = rsa.CreatePublicKey();
             fileStream.Write(publicBytes, 0, publicBytes.Length);
             fileStream.Close();
@@ -137,7 +134,7 @@ namespace EncriptionApp.ViewModel
             {
                 File.Delete(Path2);
             }
-            fileStream = new FileStream(Path2, FileMode.CreateNew, FileAccess.Write);
+            fileStream = new FileStream(Path2, FileMode.Create, FileAccess.Write);
             byte[] privateBytes = rsa.CreatePrivateKey();
             fileStream.Write(privateBytes, 0, privateBytes.Length);
             fileStream.Close();
@@ -155,7 +152,7 @@ namespace EncriptionApp.ViewModel
 
         public async void Alert()
         {
-            await Application.Current.MainPage.DisplayAlert("Información", "Funcionamiento\nGenerar llaves: Genera las llaves publica y privadaEcriptar:Encripata el texto ingresado\nDesencriptar: Desencripta el texto encriptado previamente\nPara inicia a encriptar genere las llaves\nal generar la llaves estas quedan guardadas y\nsolo si quiere generar nuevas llaves oprimalo de nuevo.\n", "Ok");
+            await Application.Current.MainPage.DisplayAlert("Información", "Funcionamiento\nGenerar llaves: Genera las llaves publica y privada\nEcriptar:Encripata el texto ingresado\nDesencriptar: Desencripta el texto encriptado previamente\nPara inicia a encriptar genere las llaves\nal generar la llaves estas quedan guardadas y\nsolo si quiere generar nuevas llaves oprimalo de nuevo.\n", "Ok");
         }
     }
 }
